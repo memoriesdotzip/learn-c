@@ -11,7 +11,7 @@ int main() {
    printf("Hello, \bWorld!");
 
    /*
-   Not all characters create valid escape sequences with backslash. Some require suffixes/arguments, e.g., \m, \u, \x. Won't get into details.
+   Not all characters create valid escape sequences with backslash. Some require suffixes/arguments, e.g., \m, \u, \x. Won't get into details here.
    */
 
   return 0;
