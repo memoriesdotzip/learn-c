@@ -2,8 +2,8 @@
 
 int main() {
 
-    // Exercise 1-3
-    /*
+    //Exercise1-3
+
     float fahren, celsius;
     int lower, upper, step;
 
@@ -13,18 +13,15 @@ int main() {
 
     fahren = lower;
 
+    printf("Exercise1-3\n");
     printf("%10s\t%10s\n", "Fahrenheit", "Celsius");
     while(fahren <= upper){
         celsius = (5.0/9.0)*(fahren - 32.0);
         printf("%10.0f\t%10.1f\n", fahren, celsius);
         fahren = fahren + step;
     }
-    */
 
-   //Exercise 1-4
-
-    float fahren, celsius;
-    int lower, upper, step;
+    //Exercise1-4
 
     lower = 0;
     upper = 300;
@@ -32,6 +29,7 @@ int main() {
 
     celsius = lower;
 
+    printf("Exercise1-4\n");
     printf("%10s\t%10s\n", "Celsius", "Fahrenheit");
     while(celsius <= upper){
         fahren = celsius*(9.0/5.0) + 32;

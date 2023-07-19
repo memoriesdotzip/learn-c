@@ -5,7 +5,7 @@
 #define STEP 20
 int main() {
 
-    //Exercise1-5
+    printf("Exercise1-5");
     for(int fahr = UPPER; fahr>=LOWER; fahr = fahr - STEP){
         printf("%3d\t%6.1f\n", fahr, (5.0/9.0)*(fahr - 32));
     }
