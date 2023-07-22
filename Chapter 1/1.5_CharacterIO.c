@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+#define OUT 0
+#define IN 1
+
 int main()
 {
 
@@ -70,27 +73,62 @@ int main()
 
     /*----------------*/
 
-    printf("Exercise1-10\n");
+    // printf("Exercise1-10\n");
 
-    int c;
+    // int c;
+
+    // while ((c = getchar()) != EOF)
+    // {
+    //     if (c == '\t')
+    //     {
+    //         putchar('\\');
+    //         putchar('t');
+    //     }
+    //     else if (c == '\b')
+    //     {
+    //         putchar('\\');
+    //         putchar('b');
+    //     }
+    //     else if (c == '\\')
+    //     {
+    //         putchar('\\');
+    //         putchar('\\');
+    //     }
+    //     else
+    //     {
+    //         putchar(c);
+    //     }
+    // }
+
+    /*----------*/
+
+    // printf("Exercise1-11");
+
+    // 1. Input Text: Apple\n\tBall; if the program returns 0 Lines & 0 Words, then double quotes are used in comparing c & \n / \t. (Syntactically Correct, Symantically Correct(?))
+
+    /*----------*/
+
+    printf("Excercise1-12\n");
+
+    int c, state;
+
+    state = OUT;
 
     while ((c = getchar()) != EOF)
     {
-        if (c == '\t')
+        if (c == ' ' || c == '\t')
         {
-            putchar('\\');
-            putchar('t');
+
+            while (c == ' ' || c == '\t')
+            {
+                c = getchar();
+            }
+
+            putchar('\n');
+
+            putchar(c);
         }
-        else if (c == '\b')
-        {
-            putchar('\\');
-            putchar('b');
-        }
-        else if (c == '\\')
-        {
-            putchar('\\');
-            putchar('\\');
-        }
+
         else
         {
             putchar(c);
