@@ -21,18 +21,20 @@ int main()
     // printf("Exercise1-8\n");
 
     // int c, spaces, t, nl;
-    // spaces= 0;
-    // t = 0;
-    // nl = 0;
+    // spaces = t = nl = 0;
 
-    // while((c = getchar())!= EOF){
-    //     if(c == ' '){
+    // while ((c = getchar()) != EOF)
+    // {
+    //     if (c == ' ')
+    //     {
     //         ++spaces;
     //     }
-    //     if(c == '\t'){
+    //     if (c == '\t')
+    //     {
     //         ++t;
     //     }
-    //     if(c == '\n'){
+    //     if (c == '\n')
+    //     {
     //         ++nl;
     //     }
     // }
@@ -108,30 +110,30 @@ int main()
 
     /*----------*/
 
-    printf("Excercise1-12\n");
+    // printf("Excercise1-12\n");
 
-    int c, state;
+    // int c, state;
 
-    state = OUT;
+    // state = OUT;
 
-    while ((c = getchar()) != EOF)
-    {
-        if (c == ' ' || c == '\t')
-        {
+    // while ((c = getchar()) != EOF)
+    // {
+    //     if (c == ' ' || c == '\t')
+    //     {
 
-            while (c == ' ' || c == '\t')
-            {
-                c = getchar();
-            }
+    //         while (c == ' ' || c == '\t')
+    //         {
+    //             c = getchar();
+    //         }
 
-            putchar('\n');
+    //         putchar('\n');
 
-            putchar(c);
-        }
+    //         putchar(c);
+    //     }
 
-        else
-        {
-            putchar(c);
-        }
-    }
+    //     else
+    //     {
+    //         putchar(c);
+    //     }
+    // }
 }
